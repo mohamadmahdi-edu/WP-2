@@ -1,0 +1,79 @@
+<head>
+<link rel="stylesheet" href="main.CSS">
+<script src="main.js"></script>
+</head>
+
+<body>
+<br />
+
+<div>
+    
+                    
+                    <p id="log" class="log"></p>
+                    
+                    <form id="myform" >
+                        
+                        <div >
+                            
+                            <select name="gender" dir="rtl"  class="form" >
+                                <option value="-1">لطفا جنسیت خود را انتخاب کنید</option>
+                                <option value="male">مرد</option>
+                                <option value="female">زن</option>
+                                <option value="non">سایر موارد</option>
+                            </select>
+
+                            
+                            <input type="text" name="name" id="name" onkeypress="check_persian_name()" class="form" placeholder="لطفا نام خود را وارد کنید (به زبان فارسی)" />
+                            <input type="text" name="lname" id="lname" onkeypress="check_persian_lname()" class="form" placeholder="لطفا نام خانوادگی خود را وارد کنید (به زبان فارسی)" />
+                            <input type="text" name="fullname" id="fullname" onkeypress="return check_english(event)" class="form" placeholder="لطفا نام و نام خانوادگی خود را به زبان انگلیسی وارد کنید" />
+                            <!-- Email -->
+                            <input type="text" name="mail" id="mail"  class="form"  placeholder="لطفا ایمیل خود را ضمن اطمینان از صحت فرمت درست آدرس ایمیل وارد کنید" />
+                            <!-- ^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$ -->
+                            <!-- Easy expression that checks for valid email addresses. -->
+                            
+                            <input type="text" name="phone" id="phone"  onkeypress="mobileNumberChanged()"  class="form" placeholder="لطفا شماره تلفن همراه خود را با سرشماره ثابت در اول شماره وارد کنید - یازده رقم " />
+
+                            <input type="text" name="ssn" id="ssn"  class="form" placeholder="لطفا کدملی خود را وارد کنید" />
+                            
+                            <input type="text" name="add" id="add" onkeypress="check_persian_add()" class="form" placeholder="لطفا آدرس خود را با حروف فارسی بنویسید و برای پارتیشن بندی از فاصله استفاده کنید." />
+
+                        
+                            <input  type="text" name="birth" id="birth" class="form" placeholder="لطفا تاریخ تولد را با فرمت تاریخ شمسی وارد کنید"/>
+
+                            
+                            <input type="text" name="pass" id="pass"  class="form" placeholder="لطفا پسورد خود را وارد کنید" />
+
+                            <input type="text" name="pass2" id="pass2"  class="form" placeholder="لطفا پسورد خود را مجددا وارد کنید" />
+
+
+                            <select name="status" dir="rtl"  class="form" >
+                                <option value="-1">لطفا وضعیت تاهل خود را انتخاب کنید</option>
+                                <option value="single">مجرد</option>
+                                <option value="married">متاهل</option>
+                            </select>
+
+                            <p dir="rtl" style = "font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">انتخاب علاقه مندی ها:</p>
+                            <div class="form" name="checkbox_" style="width: 98%;">
+                                <input type="checkbox" name="option[]" value="1" />معماری کامپیوتر
+                                <input type="checkbox" name="option[]" value="2" />امنیت و شبکه
+                                <input type="checkbox" name="option[]" value="3" />هوش مصنوعی
+                               
+                            
+                            
+                            
+                        
+
+                        </div>
+
+
+                            <!-- Send Button -->
+                            <button type="submit" id="submit" name="submit" onclick="return check_form()" class="form-btn semibold">ارسال</button> 
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+
+            </body>

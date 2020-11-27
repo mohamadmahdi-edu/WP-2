@@ -1,0 +1,72 @@
+
+/* Input Styles */
+
+  .form{
+    direction: rtl;
+    width: 100%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:15px;
+    font-family: "Calibri";
+    font: bold;
+
+  }
+
+
+  .form2{
+    direction: rtl;
+    width: 100%;
+    padding: 2px;
+    background:#f8f8f8;
+    color:#727272 !important;
+    font-size:13px;
+    font-family: "Calibri";
+    font: bold;
+
+  }
+
+  .log{
+    direction: rtl;
+    width: 98%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#750505 !important;
+    font-size:15px;
+    font-family: "Calibri";
+    font: bold;
+
+  }
+
+  .checkbox1{
+    direction: rtl;
+  }
+
+/* Send Button Styles */
+
+  .form-btn{
+
+    font-size:17px;
+    font-family: "Calibri";
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:#087191;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    margin:auto;
+  }
+
+  .form-btn:hover{
+    background:#111;
+    color: white;
+    border:none;
+  } 
+
